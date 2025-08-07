@@ -17,8 +17,8 @@ RUN apt-get update && apt-get install -y \
 RUN pip install --no-cache-dir \
         spacy \
         jupyter \
-        torch==1.9.0 \
-        torchvision \
+        torch==2.2.2+cu122 \
+        torchvision==0.17.2+cu122 \
         torchtext==0.10 \
         nltk \
         datasets \

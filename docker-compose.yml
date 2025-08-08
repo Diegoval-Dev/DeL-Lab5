@@ -1,8 +1,8 @@
 version: '3.8'
 
 services:
-  AI:
-    image: torchserver
+  ai:
+    build: .
     restart: always
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
@@ -10,4 +10,4 @@ services:
     volumes:
       - ./:/lab
     ports:
-      - "8888:8888"
+      - "8889:8889"
